@@ -5,7 +5,7 @@ Serial port;
 // 描画エリアの明るさ
 int brightness = 0;  
 // Arduinoが接続されている知るあるポート
-String arduino_port = "/dev/tty.usbmodem11301";
+String portName = "/dev/tty.usbmodem11301";
 
 // Arduino起動時1度だけ実行
 void setup() {
@@ -13,7 +13,7 @@ void setup() {
     size(400, 400); 
     
     //シリアル通信の初期化
-    port = new Serial(this, arduino_port, 9600);
+    port = new Serial(this, portName, 9600);
 }
 
 // 起動中ずっと実行

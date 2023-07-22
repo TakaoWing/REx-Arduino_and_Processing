@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "01_light_visualization/SendLightValue/SendLightValue.ino",
+    "sketch": "02_falling block/SendButtonValues/SendButtonValues.ino",
     "port": "/dev/tty.usbmodem11301",
     "programmer": "avrisp"
 }
