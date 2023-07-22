@@ -24,7 +24,10 @@ void draw() {
 
 // データの受信があった場合に実行
 void serialEvent(Serial port) {
+    // シリアルポートからデータを受信
     int data = port.read();
+    // データをコンソールに表示
     println(data);
+    // 明るさを変更
     brightness = data;
 }
